@@ -1,0 +1,28 @@
+{
+  "name": "aliexpress-media-downloader-web",
+  "version": "1.0.0",
+  "description": "Web version of AliExpress Media Downloader built with Express and Vanilla JS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "aliexpress",
+    "media",
+    "downloader",
+    "express",
+    "scraper"
+  ],
+  "author": "GitHub Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
