@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AliExpress Media Downloader</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Browser version</p>
+          <h1>AliExpress Media Downloader</h1>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="input-panel card">
+          <div class="input-row">
+            <input id="productUrl" type="url" placeholder="Paste AliExpress product URL here" />
+            <button id="pasteBtn" class="secondary">Paste</button>
+          </div>
+
+          <div class="action-row">
+            <button id="fetchBtn" class="primary">Fetch Media</button>
+          </div>
+
+          <div id="loader" class="loader hidden" aria-live="polite">
+            <div class="spinner"></div>
+            <span>Fetching product media...</span>
+          </div>
+
+          <p id="statusText" class="status-text"></p>
+        </section>
+
+        <section class="toolbar card hidden" id="toolbar">
+          <div class="toolbar-left">
+            <label class="checkbox-row">
+              <input id="selectAll" type="checkbox" />
+              <span>Select All</span>
+            </label>
+          </div>
+          <div class="toolbar-right">
+            <span id="selectionCount">0 selected</span>
+          </div>
+        </section>
+
+        <section class="media-grid" id="mediaGrid"></section>
+
+        <section class="download-bar card hidden" id="downloadBar">
+          <button id="downloadSelectedBtn" class="primary">Download Selected</button>
+          <button id="downloadAllBtn" class="secondary">Download All</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
